@@ -1,9 +1,9 @@
 # Counter Attack FPS Shooter
-## A small module for a AAA (tripple A) title game with super high quality graphics made with unity engine using Hight Definition Render Pipeline.
+## A small module for a AAA (tripple A) title game with super high quality graphics made with unity engine using High Definition Render Pipeline.
 
 
 ```yml
-Due date of Completing this project: 09-december-2021
+Due date of completing this project: 09-december-2021
 ```
 
 ### This project will contain:
