@@ -12,8 +12,8 @@ Due date of completing this project: 09-december-2021
 * Complete weapon mechanism with recoil and all.
 * A high graphics map to play around in.
 * Highly polished environment and smooth gameplay.
-* Enemies Spawning at random positions.
-* Kill timer to kill an enmy with in the specific time.
+* Enemies spawning at random positions.
+* Kill timer to kill an enemy within the specific time.
 * and much more...
 
 #### Game Objective:
