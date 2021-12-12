@@ -25,4 +25,4 @@
 > Kill as many enemies as you can in specific time.
 
 
-### <img src="https://www.pngall.com/wp-content/uploads/2017/05/Alert-Download-PNG.png" width="30" height="30" />   The Project is still under work
+#### <img src="https://www.pngall.com/wp-content/uploads/2017/05/Alert-Download-PNG.png" width="20" height="20" />   The Project is still under work.
