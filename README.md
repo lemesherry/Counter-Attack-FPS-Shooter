@@ -15,7 +15,7 @@
 * A complete rigged model with all the animations.
 * Complete player movement system using unity's new input system.
 * Complete weapon mechanism with recoil and all.
-* A high graphics map to play around in.
+* A very high graphics environment to play around in.
 * Highly polished environment and smooth gameplay.
 * Enemies spawning at random positions.
 * Kill timer to kill an enemy within the specific time.
