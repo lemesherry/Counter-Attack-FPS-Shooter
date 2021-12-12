@@ -4,7 +4,7 @@
 #### <a href= "https://github.com/lemesherry/Counter-Attack-FPS-Shooter/blob/main/Project%20Design%20Doc%20(%20counter-attack-FPS-Shooter%20).docx"> <img src="https://www.nicepng.com/png/full/265-2650455_about-this-issue-document-icon-orange.png" width="18" height="25" /> [Project Design Document](https://github.com/lemesherry/Counter-Attack-FPS-Shooter/blob/main/Project%20Design%20Doc%20(%20counter-attack-FPS-Shooter%20).docx)
 
 ### <img src="https://iconarchive.com/download/i97803/bokehlicia/pacifica/system-software-installer.ico" width="16" height="16" />  Installation:
-> 1. Clone the repository or download it.
+> 1. Clone the repository or download it **or** just download the zip file named "**Counter-Attack-FPS-Shooter.rar**".
 > 2. Run "**Counter Attack FPS Shooter.exe**".
 
 ### <img src="https://www.iconpacks.net/icons/2/free-folder-icon-1484-thumb.png" width="16" height="16" />  Project Contains:
