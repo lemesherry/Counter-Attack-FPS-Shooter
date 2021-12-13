@@ -103,16 +103,15 @@ public class Sc_WeaponHandler : MonoBehaviour {
 
         if ( Time.time >= nextFireTime ) {
 
-            if( Weapon_Bullets == 0 ) {
+            if( WeaponBullets == 0 ) {
 
                 Debug.Log( "Magzine is empty" );
                 return;
             }
 
-            Weapon_Bullets--;
+            WeaponBullets--;
 
-            PlayFireAnimationAndSound();
-            nextFireTime = Time.time + 1 / Weapon_Fire_Rate;
+            nextFireTime = Time.time + 1 / WeaponFireRate;
 
             Shoot();
         }
@@ -120,29 +119,31 @@ public class Sc_WeaponHandler : MonoBehaviour {
 
     public void Shoot() {
 
-        Muzzle_Flash_Particle.Play();
 
         RaycastHit _hitInfo;
 
-        if ( Physics.Raycast(Look_Root_Object.transform.position, Look_Root_Object.transform.forward, out _hitInfo, Weapon_Range) ) {
+        if ( Physics.Raycast(LookRootObject.transform.position, LookRootObject.transform.forward, out _hitInfo, WeaponRange) ) {
 
             Debug.Log( _hitInfo.transform.name );
 
-            Target_Script =  _hitInfo.transform.GetComponent<Sc_Target> ();
+            TargetScript =  _hitInfo.transform.GetComponent<Sc_Target> ();
 
-            if( Target_Script != null ) {
+            if( TargetScript != null ) {
 
-                Target_Script.TakeDamage( Weapon_Damage );
+                TargetScript.TakeDamage( WeaponDamage );
             }
 
             if( _hitInfo.rigidbody != null ) {
 
-                _hitInfo.rigidbody.AddForce( -_hitInfo.normal * Weapon_Impact_Force, ForceMode.Impulse );
+                _hitInfo.rigidbody.AddForce( -_hitInfo.normal * WeaponImpactForce, ForceMode.Impulse );
             }
 
-            GameObject impactGameObject = Instantiate( Impact_Effect_Object, _hitInfo.point, Quaternion.LookRotation(_hitInfo.normal), _hitInfo.transform );
+            PlayFireAnimationAndSound();
+            MuzzleFlashParticle.Play();
 
-            Destroy( impactGameObject, 1f );
+            GameObject impactGameObject = Instantiate( ImpactEffectObject, _hitInfo.point, Quaternion.LookRotation(_hitInfo.normal), _hitInfo.transform );
+
+            Destroy( impactGameObject, 2f );
 
         }
     } // ★彡[ Shoot ]彡★
@@ -150,30 +151,30 @@ public class Sc_WeaponHandler : MonoBehaviour {
     public IEnumerator ReloadGun() {
 
         PlayReloadAnimationAndSound();
-        yield return new WaitForSeconds( Weapon_Reload_Time );
-        Weapon_Bullets = Weapon_Magazine_Size;
+        yield return new WaitForSeconds( WeaponReloadTime );
+        WeaponBullets = WeaponMagazineSize;
 
     } // ★彡[ Reload ]彡★
 
     public void ScopeIn() {
 
-        Weapon_Animator_Component.SetBool( AnimationTags.AimBool, true );
+        WeaponAnimatorComponent.SetBool( AnimationTags.AimBool, true );
     } // ★彡[ Scope In ]彡★
 
     public void ScopeOut() {
 
-        Weapon_Animator_Component.SetBool( AnimationTags.AimBool, false );
+        WeaponAnimatorComponent.SetBool( AnimationTags.AimBool, false );
     } // ★彡[ Scioe Out ]彡★
     
     public void PlayFireAnimationAndSound() {
 
-        Weapon_Animator_Component.SetTrigger( AnimationTags.fireTrig );
-        Weapon_Audio_Script.FireSound();
+        WeaponAnimatorComponent.SetTrigger( AnimationTags.fireTrig );
+        WeaponAudioScript.FireSound();
     } // ★彡[ Play Fire Animation And Sound ]彡★
 
     public void PlayReloadAnimationAndSound() {
 
-        Weapon_Animator_Component.SetTrigger( AnimationTags.reloadTrig );
-        Weapon_Audio_Script.ReloadSound();
+        WeaponAnimatorComponent.SetTrigger( AnimationTags.reloadTrig );
+        WeaponAudioScript.ReloadSound();
     } // ★彡[ Play Reload Animation And Sound ]彡★
 }
