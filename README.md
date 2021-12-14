@@ -1,6 +1,7 @@
 # Counter Attack FPS Shooter
 ## A small module for a AAA (tripple A) title game with super high quality graphics made with unity engine using High Definition Render Pipeline.
 
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lemesherry/Counter-Attack-FPS-Shooter?label=Size&style=for-the-badge">
 #### <a href= "https://github.com/lemesherry/Counter-Attack-FPS-Shooter/blob/main/Project%20Design%20Doc%20(%20counter-attack-FPS-Shooter%20).docx"> <img src="https://www.nicepng.com/png/full/265-2650455_about-this-issue-document-icon-orange.png" width="18" height="25" /> [Project Design Document](https://github.com/lemesherry/Counter-Attack-FPS-Shooter/blob/main/Project%20Design%20Doc%20(%20counter-attack-FPS-Shooter%20).docx)
 
 ### <img src="https://iconarchive.com/download/i97803/bokehlicia/pacifica/system-software-installer.ico" width="16" height="16" />  Installation:
