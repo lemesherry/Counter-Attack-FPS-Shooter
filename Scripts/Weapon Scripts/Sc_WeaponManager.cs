@@ -46,7 +46,7 @@ public class Sc_WeaponManager : MonoBehaviour {
             currentWeaponAnimator = weapons[3].GetComponent<Animator>();
         }
 
-        var movementAnimationSpeed = player._verticalSpeed == 0 ? player._horizontalSpeed : player._verticalSpeed;
+        var movementAnimationSpeed = ( player._verticalSpeed == 0 ? player._horizontalSpeed : player._verticalSpeed ) / 2;
 
         currentWeaponAnimator.SetFloat( AnimationTags.speedF, movementAnimationSpeed, 0.01f, Time.deltaTime );
 

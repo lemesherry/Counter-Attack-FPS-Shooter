@@ -109,17 +109,17 @@ public static class Sc_Models {
         public float stepDistance;
 
         // ★彡[ Sound volume ]彡★
-        public float sprintVolume = 1f;
-        public float crouchVolume = 0.2f;
-        public float proneVolume = 0.1f;
-        public float jumpVolume = 0.5f;
-        public float walkMinVolume = 0.3f, walkMaxVolume = 0.6f;
+        public float sprintVolume = 0.7f;
+        public float crouchVolume = 0.1f;
+        public float proneVolume = 0.05f;
+        public float jumpVolume = 0.3f;
+        public float walkMinVolume = 0.2f, walkMaxVolume = 0.4f;
 
         // ★彡[ Step Distances ]彡★
-        public float walkStepDistance = 0.35f;
-        public float sprintStepDistance = 0.15f;
-        public float crouchStepDistance = 0.5f;
-        public float proneStepDistance = 0.7f;
+        public float walkStepDistance = 0.40f;
+        public float sprintStepDistance = 0.20f;
+        public float crouchStepDistance = 0.55f;
+        public float proneStepDistance = 0.8f;
 
     } // ★彡[ Sound Settings ]彡★
 
